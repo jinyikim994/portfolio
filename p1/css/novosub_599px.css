@@ -1,0 +1,656 @@
+@charset "UTF-8";
+
+@media (max-width:599px){
+/*header*/
+header{
+    width:100%;
+    height:101px;
+    margin:0 auto;
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+header>#menu{
+    width:100%;
+    height:217px;
+    position:relative;
+    top:40px; left:0;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-flow: column nowrap;
+    line-height:10px;
+    padding: 48px 30px;
+    position:absolute;
+    top:40px; left:0;
+
+}
+.b{
+    display:none;
+}    
+    
+header>#menu ul{
+    font-family:"맑은 고딕";
+    width:100%;
+    font-size:17px;
+    font-weight:bold;
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    line-height:50px;
+    position:relative;
+    top:5px; left:-30px;
+}
+header>#menu ul a {
+    font-family: arial;
+    font-size: 15px;
+    background-color:none;
+    font-weight: normal;
+    text-decoration: none;
+    box-shadow:inset 0 1px 0 0 #e3e3e3;
+    display:block;
+    color:black;
+    text-decoration:none;
+}
+header>#menu li{
+    float:left;
+    list-style:none;
+
+}
+
+header>#menu li:nth-child(4){
+    width:350px;
+    display:none;
+    
+}
+.a{
+    position:absolute;
+    top:30px; right:30px;
+}    
+header>#logo{
+    width:85px;
+    height:79px;
+    position:absolute;
+    top:10px; left:10px; 
+}
+header>#logo img {
+    width:85px;
+    height:79px;
+   
+}
+/*section*/
+section{
+    width:100%;
+    height:auto; 
+}
+/*s1-about*/
+section #s1-about{
+    width:100%;
+    height:1000px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+}
+section #s1-about h3{
+    font-size:60px;
+    color:#c07932;
+    font-family:Lora;
+    font-weight:normal;
+    text-align:center;
+}
+section #s1-about>.box{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+}
+section #s1-about>h4{
+    width:155px;
+    height:20px;
+    background-color:#000;
+    margin-top:-65px;
+    text-transform:uppercase;
+    color:#fff;
+    border:1px dashed #fff;
+    font-size:12px;
+    margin:-70px auto 0;
+    text-align:center;
+}
+section #s1-about>.box>.fbox{
+    width:70%;
+    height:300px;
+    border:10px solid whitesmoke;
+    border-radius:50%;
+    background-position:center;
+    background-size:cover;
+}
+
+section #s1-about>.box>.fbox>.fimg{
+    width:50%;
+    height:180px;
+    border:10px solid whitesmoke;
+    border-radius:50%;
+    position:relative;
+    top:-10px; left:-75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+section #s1-about>.box>.tbox{
+    width:100%;
+    height:450px;
+    margin:0;
+    text-align:center;
+}
+section #s1-about>.box>.tbox h4{
+    font-size:22px;
+    margin-top:70px;
+    text-transform:uppercase;
+    font-family:karla,sans-serif;
+}
+section #s1-about>.box>.tbox p{
+    font-size:14px;
+    margin-top:10px;
+    color: #787878;
+    font-family:karla,sans-serif;
+}
+section #s1-about>.box>.tbox button{
+    width:144px;
+    height:50px;
+    background-color:whitesmoke;
+    border:none;
+    border-radius:6px;
+    text-transform:uppercase;
+    margin:40px 0px;
+    font-size: 11px;
+    font-weight: 700;  
+}
+/*s2-customers*/
+section #s2-customers{
+    width:100%;
+    height:1600px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: palevioletred;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+section #s2-customers>.Mustache{
+    width:70px;
+    height:24px;
+    margin-top:-40px;
+}
+section #s2-customers>.Mustache img{
+    width:70px;
+    height:24px;
+}
+
+section #s2-customers h1{
+    width:350px;
+    height:25px;
+    font-size:20px;
+    margin:50px;
+    color:#fff;
+    text-align: center;
+    text-transform:uppercase;
+    padding:40px 0 20px 0;
+    font-family:karla,sans-serif;
+}
+section #s2-customers>.box{
+    width:100%;
+    height:1228px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+     margin-top:40px;
+}
+section #s2-customers>.box>.coment{
+    width:400px;
+    height:262px;
+    margin:10px 40px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+ 
+}
+section #s2-customers>.box>.coment>.p-say{
+    width:400px;
+    height:108px;
+    border-radius: 6px;
+    background-color:whitesmoke;
+    opacity:0.9;
+    background: rgba(255,255,255,0.72);
+    
+}
+
+section #s2-customers>.box>.coment>.p-say blockquote{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding:20px;  
+} 
+
+
+section #s2-customers>.box>.coment>.p-img{
+    width:80px;
+    height:80px;
+    margin:20px 0px;
+    border-radius:50%;
+    background-color: blueviolet;
+    
+}
+section #s2-customers>.box>.coment>.p-img img{
+   width:80px;
+   height:80px; 
+   border-radius:50%;       
+}
+
+section #s2-customers>.box>.coment p{
+    width:400px;
+    font-size:5px;
+    color:#c07932;
+    text-align:center;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*s3-wine*/
+section #s3-wine{
+    width:100%;
+    height:500px;
+    background-color:#787878;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+section #s3-wine>.Mustache{
+    width:70px;
+    height:24px;
+}
+section #s3-wine>.Mustache img{
+    width:70px;
+    height:24px;
+}
+section #s3-wine h2{
+    font-size:24px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:whitesmoke;
+    font-family:Lora;
+}
+/*s4-staff*/
+section #s4-staff{
+    width:100%;
+    height:1900px;
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+section #s4-staff h1{
+    font-size:60px;
+    margin:40px 0px;
+    text-align: center;
+    color:#c07932;
+    font-family:Lora;
+    font-weight:normal;
+    margin-top:100px;
+}
+
+section #s4-staff h4{
+    width:170px;
+    height:20px;
+    text-align: center;
+    font-size: 12px;
+    background-color:black;
+    color:#fff;
+    text-transform: uppercase;
+    border:1px dashed #fff;
+    position:relative;
+    top:-60px; left:0;
+}
+
+section #s4-staff>.box{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+section #s4-staff>.box>.s-box{
+    width:319px;
+    height:510px;
+    margin:0px 20px;
+}
+section #s4-staff>.box>.s-box>.s-img{
+    width:319px;
+    height:372px;
+    border-radius:50%;
+}
+section #s4-staff>.box>.s-box>.s-img img{
+    width:319px;
+    height:280px;
+    border-radius:50%;
+    box-shadow: 0 0 0 10px #f1f1f1;
+       
+}
+section #s4-staff>.box>.s-box>.s-img h3{
+    font-size: 16px;
+    color:black;
+    margin-top:30px;
+    text-align:center;
+}
+section #s4-staff>.box>.s-box>.s-img h5{
+    font-size: 13px;
+    color:#c07932;
+    text-align:center;
+    margin-top:-15px;
+    
+    
+}
+section #s4-staff>.box>.s-box>.pbox{
+    width:319px;
+    height:104px;
+    
+}
+
+section #s4-staff>.box>.s-box>.pbox p{
+    width:319px;
+    font-size:14px;
+    text-align: center;
+    margin-top:-10px;
+    color:#787878;
+    
+    
+}
+section #s4-staff>.box>.s-box>.iconbox{
+    width:319px;
+    height:32px;
+    margin-top:-15px;
+    display:flex;
+    justify-content: center;
+}
+section #s4-staff>.box>.s-box>.iconbox>.icon{
+    width:32px;
+    height:32px;
+    background-color:#c07932;
+    border-radius:50%;
+}
+section #s4-staff>.box>.s-box>.iconbox>.icon img{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+}
+/*s5-reservation*/
+/*Section7 레스토랑 예약창*/ 
+section #s5-reservation {
+    width:100%;
+    height:1500px;
+    background-color: darksalmon;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section #s5-reservation h1 {
+    color: #ffffff;
+    font-size:40px;
+    font-weight: normal;
+    text-align: center;
+    height: 30px;
+    font-weight: 400;
+    margin-top:-50px;
+    font-family:Lora;
+    font-weight:normal;
+}
+
+section #s5-reservation h2 {
+    color:rgba(255,255,255,0.87);
+    font-size:20px;
+    text-align: center;
+    line-height: 24px;
+    font-family: Josefin Sans;
+    font-weight: 300;
+    margin-top:20px;
+    margin-bottom: 20px;
+    
+
+}
+
+section #s5-reservation>#r_box {
+    width:90%;
+    height:auto;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    display:flex;
+    flex-direction: column;
+    
+   
+}
+
+section #s5-reservation>#r_box>.selectbox{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+section #s5-reservation>#r_box>.selectbox h4{
+    margin:40px 0 0 20px;
+    font-size:14px;
+    
+    
+}
+section #s5-reservation>#r_box>.selectbox span{
+    font-size: 15px;
+    margin:0px 70px;
+    
+}
+section #s5-reservation>#r_box>.selectbox button{
+    width:100%;
+    height: 75px;
+    border: 1px solid #666;
+    background-color: #fff;
+    margin: 10px 0px;
+}
+section #s5-reservation>#r_box>.selectbox>button h5{
+    font-size: 14px;
+    display: inline;
+    margin: 0px 0 0 30px;   
+}
+section #s5-reservation>#r_box>.selectbox>.btn{
+    width:80%;
+    height:75px;
+    border: 1px solid #666;
+    background-position:8px;
+    background-repeat: no-repeat;    
+}
+
+section #s5-reservation>#r_box>.numberbox{
+    width:100%;
+    height:20px;
+    margin:30px 0px;
+}
+section #s5-reservation>#r_box>.numberbox h4{
+    font-size:14px;
+    text-transform:uppercase;
+    margin:0px 20px;
+    
+}
+section #s5-reservation>#r_box>.numberbox ul{
+    padding: 0;
+    list-style: none;
+    
+} 
+
+section #s5-reservation>#r_box>.numberbox ul a {
+    font-family: arial;
+    font-size: 14px;
+    color:black;
+    font-weight: normal;
+    text-decoration:none;
+}
+
+section #s5-reservation>#r_box>.numberbox li {
+    float: left;
+    padding:0px 15px;
+    text-decoration: none;
+    color: white;
+}
+section #s5-reservation>#r_box>.detailbox{
+    width:100%; 
+    height:800px;
+}
+section #s5-reservation>#r_box>.detailbox>.box{
+    width:90%;
+    height:720px;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    top:20px; left:0;
+}
+section #s5-reservation>#r_box>.detailbox>.box>.form{
+    width:100%
+    height:auto;
+    display: flex;
+    flex-direction: column;
+
+}
+section #s5-reservation>#r_box>.detailbox>.box>.form label{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000; 
+    margin:0px 15px;
+}
+section #s5-reservation>#r_box>.detailbox>.box>.form>input{
+    width:355px;
+    height:60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #fcfcfc;
+    color: #454545;
+    border: 1px solid #e5e5e5;
+    margin:5px 15px;
+    
+}
+
+section #s5-reservation>#r_box>.detailbox>.box>.form>textarea{
+    width:305px;
+    height:100px;
+    background: #fcfcfc;
+    border: 1px solid #e5e5e5;
+    padding: 22px 25px;
+    margin:10px 0px;
+    color: #454545;
+    font-size: 12px;
+    margin:5px 15px;
+    
+}
+section #s5-reservation>#r_box>.detailbox button{
+    width:100%;
+    height:60px;
+    background-color:#c07932;
+    border:none;
+    border-radius: 5px;
+    color:#fff;
+}  
+/*footer*/
+footer{
+    width:100%;
+    height:auto;
+    background-color:#010c24;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>.logo{
+    width:121px;
+    height:127px;
+    background-color:#010c24;
+    padding:20px 0px;
+}
+
+footer>.logo img{
+   width:121px;
+   height:127px; 
+}
+footer>.tbox{
+    width:100%;
+    height:696px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+footer>.tbox>.information{
+    width:100%;
+    height:182px;
+    float: left;
+    margin:0;
+}
+footer>.tbox>.information:nth-child(2){    
+    width:100%;
+    height:20%;    
+}   
+footer>.tbox>.information:nth-child(3){    
+    width:100%;
+    height:25%;    
+}
+footer>.tbox>.information:nth-child(4){    
+    width:100%;
+    height:20%;    
+}       
+footer>.tbox>.information h3{
+    font-size:20px;
+    color:#c07932;
+    margin:0px;
+    text-align:center;
+}
+footer>.tbox>.information p{
+    font-size:14px;
+    color:#c4c4c4;
+    text-align:center;
+    line-height:24px;
+}
+footer>.Social{
+    width:100%; 
+    height:80px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#010819;
+    
+}
+footer>.Social p{
+    font-size:16px;
+    color:#c07932;
+    margin-top:30px;
+}
+}

@@ -1,0 +1,607 @@
+@charset "UTF-8";
+
+@media (min-width:1100px){
+/*header*/
+header{
+    width:100%;
+    height:171px;
+    margin:0 auto;
+    background-color:#010c24;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+header>#menu{
+    width:1180px;
+    height:80px;
+    
+}
+.a{
+    display:none;
+}     
+header>#menu ul{font-family:"맑은 고딕";
+    font-size:17px;
+    color:blue;
+    font-weight:bold;
+    
+}
+header>#menu ul a {
+    font-family: arial;
+    font-size: 15px;
+    color:#fff;
+    font-weight: normal;
+    text-decoration: none;
+}
+header>#menu li{
+    float:left;
+    padding:7px 30px;
+    text-decoration:none;
+    color:#010c24;
+    
+}
+header>#menu li:nth-child(4){
+    width:350px;
+}
+header>#logo{width:132px;
+    height:123px;
+    margin:-170px 0 0 0px;
+    
+}
+header>#logo img {
+    width:132px;
+    height:123px;
+   
+}
+/*section*/
+section{
+    width:100%;
+    height:auto;   
+}
+/*s1-about*/
+section #s1-about{
+    width:100%;
+    height:780px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+section #s1-about h3{
+    font-size:60px;
+    color:#c07932;
+    font-family:Lora;
+    font-weight:normal;
+    margin-top:-40px;
+}
+section #s1-about>.box{
+    width:1200px;
+    height:auto;
+    display:flex;
+}
+section #s1-about>h4{
+    width:155px;
+    height:20px;
+    background-color:#000;
+    margin-top:-65px;
+    text-transform:uppercase;
+    color:#fff;
+    text-align:center;
+    border:1px dashed #fff;
+    font-size:12px;
+}
+section #s1-about>.box>.fbox{
+    width:480px;
+    height:420px;
+    border:10px solid whitesmoke;
+    border-radius:50%;
+    background-position:center;
+    background-size:cover;
+    margin-left:100px;
+}
+
+section #s1-about>.box>.fbox>.fimg{
+    width:180px;
+    height:180px;
+    border:10px solid whitesmoke;
+    border-radius:50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+    top:-10px; left:-100px;
+}
+
+section #s1-about>.box>.tbox{
+    width:580px;
+    height:450px;
+    margin:0px 40px;
+}
+section #s1-about>.box>.tbox h4{
+    font-size:22px;
+    margin-top:20px;
+    margin-bottom:60px;
+    text-transform:uppercase;
+    font-family:karla,sans-serif;
+    
+}
+section #s1-about>.box>.tbox p{
+    font-size:14px;
+    margin-top:10px;
+    color: #787878;
+    font-family:karla,sans-serif;
+}
+section #s1-about>.box>.tbox button{
+    width:144px;
+    height:50px;
+    background-color:whitesmoke;
+    border:none;
+    border-radius:6px;
+    text-transform:uppercase;
+    margin:40px 0px;
+    font-size: 11px;
+    font-weight: 700;  
+}
+/*s2-customers*/
+section #s2-customers{
+    width:100%;
+    height:950px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+}
+section #s2-customers>.Mustache{
+    width:70px;
+    height:24px; 
+}
+section #s2-customers>.Mustache img{
+    width:70px;
+    height:24px;
+}
+
+section #s2-customers h1{
+    font-size:20px;
+    margin:0;
+    color:#fff;
+    text-align: center;
+    text-transform:uppercase;
+    padding:40px 0 20px 0;
+    
+}
+section #s2-customers>.box{
+    width:1220px;
+    height:670px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+}
+section #s2-customers>.box>.coment{
+    width:400px;
+    height:262px;
+    margin:10px 40px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+ 
+}
+section #s2-customers>.box>.coment>.p-say{
+    width:400px;
+    height:108px;
+    border-radius: 6px;
+    background-color:whitesmoke;
+    opacity:0.9;
+    background: rgba(255,255,255,0.72);
+    
+}
+
+section #s2-customers>.box>.coment>.p-say blockquote{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding:20px;  
+} 
+
+
+section #s2-customers>.box>.coment>.p-img{
+    width:80px;
+    height:80px;
+    margin:20px 0px;
+    border-radius:50%;
+    
+}
+section #s2-customers>.box>.coment>.p-img img{
+   width:80px;
+   height:80px; 
+   border-radius:50%;       
+}
+
+section #s2-customers>.box>.coment p{
+    width:400px;
+    font-size:5px;
+    color:#c07932;
+    text-align:center;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;  
+}
+/*s3-wine*/
+section #s3-wine{
+    width:100%;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+section #s3-wine>.Mustache{
+    width:70px;
+    height:24px;
+     
+}
+section #s3-wine>.Mustache img{
+    width:70px;
+    height:24px;   
+}
+section #s3-wine h2{
+    font-size:36px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:whitesmoke;
+    font-family:Lora;
+}
+/*s4-staff*/
+section #s4-staff{
+    width:100%;
+    height:900px;
+    background-color:#fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+section #s4-staff h1{
+    font-size:108px;
+    margin:40px 0px;
+    text-align: center;
+    color:#c07932;
+    font-family:Lora;
+    font-weight:normal;
+}
+
+section #s4-staff h4{
+    width:170px;
+    height:20px;
+    text-align: center;
+    font-size: 12px;
+    background-color:black;
+    color:#fff;
+    text-transform: uppercase;
+    border:1px dashed #fff;
+    position:relative;
+    top:-60px; left:0;
+}
+
+section #s4-staff>.box{
+    width:100%;
+    height:510px;
+    
+    display:flex;
+    justify-content:center;
+
+}
+section #s4-staff>.box>.s-box{
+    width:319px;
+    height:510px;
+    margin:0px 20px;
+    
+    
+}
+section #s4-staff>.box>.s-box>.s-img{
+    width:319px;
+    height:372px;
+    border-radius:50%;
+    
+}
+section #s4-staff>.box>.s-box>.s-img img{
+    width:319px;
+    height:280px;
+    border-radius:50%;
+       
+}
+
+
+section #s4-staff>.box>.s-box>.s-img h3{
+    font-size: 16px;
+    color:black;
+    margin:0;
+    text-align:center;
+}
+section #s4-staff>.box>.s-box>.s-img h5{
+    font-size: 13px;
+    color:#c07932;
+    text-align:center;
+    margin:0;
+    
+    
+}
+section #s4-staff>.box>.s-box>.pbox{
+    width:319px;
+    height:104px;
+    
+}
+
+section #s4-staff>.box>.s-box>.pbox p{
+    width:319px;
+    font-size:14px;
+    text-align: center;
+    margin:0;
+    color:#787878;
+    
+    
+}
+section #s4-staff>.box>.s-box>.iconbox{
+    width:319px;
+    height:32px;
+    
+    display:flex;
+    justify-content: center;
+}
+section #s4-staff>.box>.s-box>.iconbox>.icon{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+}
+section #s4-staff>.box>.s-box>.iconbox>.icon img{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+}
+/*s5-reservation*/
+section #s5-reservation {
+    width: 100%;
+    height:1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display:flex;
+    flex-direction: column;
+}
+
+section #s5-reservation h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    height: 30px;
+    font-weight: 400;
+    font-family:Lora; 
+}
+
+section #s5-reservation h2 {
+    color:rgba(255,255,255,0.87);
+    font-size: 20px;
+    text-align: center;
+    margin:0px 0px;
+    line-height: 24px;
+    font-family: Josefin Sans;
+    font-weight: 300;
+    
+    
+    
+}
+
+section #s5-reservation>#r_box {
+    width:1260px;
+    height:auto;
+    background-image: url(../img/1.jpg);
+    margin:40px auto 0;
+    background-repeat: no-repeat;
+    background-color: #fff;
+   
+}
+
+section #s5-reservation>#r_box>.selectbox{
+    width:865px;
+    height:153px;
+    background-color: #fff;
+    position:relative;
+    top:0; left:365px;
+}
+section #s5-reservation>#r_box>.selectbox h4{
+    margin:40px 0 0 20px;
+    font-size:14px;
+    
+    
+}
+section #s5-reservation>#r_box>.selectbox span{
+    font-size: 15px;
+    margin:0px 70px;
+    
+}
+section #s5-reservation>#r_box>.selectbox button{
+    width: 163px;
+    height: 75px;
+    border: 1px solid #666;
+    background-color: #fff;
+    margin: 10px 10px;
+}
+section #s5-reservation>#r_box>.selectbox>button h5{
+    font-size: 14px;
+    display: inline;
+    margin: 0px 0 0 30px;   
+}
+section #s5-reservation>#r_box>.selectbox>.btn{
+    width:163px;
+    height:75px;
+    border: 1px solid #666;
+    background-position:8px;
+    background-repeat: no-repeat;    
+}
+
+section #s5-reservation>#r_box>.numberbox{
+    width:865px;
+    height:62px;
+    background-color: #fff;
+    position:relative;
+    top:-20px; left:365px;
+}
+section #s5-reservation>#r_box>.numberbox h4{
+    font-size:14px;
+    text-transform:uppercase;
+    margin:0px 20px;
+    
+}
+section #s5-reservation>#r_box>.numberbox ul{
+    padding: 0;
+    margin:10px 0px;
+    list-style: none;
+    
+} 
+
+section #s5-reservation>#r_box>.numberbox ul a {
+    font-family: arial;
+    font-size: 14px;
+    color:black;
+    font-weight: normal;
+    text-decoration:none;
+}
+
+section #s5-reservation>#r_box>.numberbox li {
+    float: left;
+    padding:0px 20px;
+    text-decoration: none;
+    color: white;
+}
+section #s5-reservation>#r_box>.detailbox{
+    width:865px; 
+    height:495px;
+    position:relative;
+    top:0; left:365px;
+    
+    
+}
+section #s5-reservation>#r_box>.detailbox>.box{
+    width:865px;
+    height:431px;
+    position: relative;
+    top:-30px; left:0;
+    display: flex;
+
+    
+}
+section #s5-reservation>#r_box>.detailbox>.box>.form{
+    width:410px;
+    height:400px;
+    
+    margin:20px 15px;
+
+}
+section #s5-reservation>#r_box>.detailbox>.box>.form label{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;  
+}
+section #s5-reservation>#r_box>.detailbox>.box>.form>input{
+    width:355px;
+    height:60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #fcfcfc;
+    color: #454545;
+    border: 1px solid #e5e5e5;
+    margin:5px 0px;
+    
+}
+
+section #s5-reservation>#r_box>.detailbox>.box>.form>textarea{
+    width:355px;
+    height:135px;
+    background: #fcfcfc;
+    border: 1px solid #e5e5e5;
+    padding: 22px 25px;
+    margin:10px 0px;
+    color: #454545;
+    font-size: 12px;
+    
+}
+section #s5-reservation>#r_box>.detailbox button{
+    width:850px;
+    height:60px;
+    border:none;
+    margin-top:40px;
+    margin-left:-10px;
+    border-radius: 5px;
+    color:#fff;
+}
+
+/*footer*/
+footer{
+    width:100%;
+    height:590px;
+    background-color:#010c24;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>.logo{
+    width:121px;
+    height:127px;
+    background-color:#010c24;
+    padding:20px 0px;
+}
+
+footer>.logo img{
+   width:121px;
+   height:127px; 
+}
+footer>.tbox{
+    width:1090px;
+    height:182px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+footer>.tbox>.information{
+    width:270px;
+    height:190px;
+    float: left;
+    margin:0 10px;
+}
+footer>.tbox>.information h3{
+    font-size:20px;
+    color:#c07932;
+    margin:0px;
+    text-align:center;
+}
+footer>.tbox>.information p{
+    font-size:14px;
+    color:#fff;
+    font-family: karla,sans-serif;
+    text-align:center;
+}
+footer>.Social{
+    width:100%; 
+    height:100px;
+    background-color:#010819;    
+}
+footer>.Social p{
+    font-size:16px;
+    color:#c07932;
+    margin:0px 50px;
+    text-align:center;
+    margin-top:35px;
+}
+}

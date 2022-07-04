@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+@media (min-width:600px) {
+
+    /*footer*/
+    /*header nav_(600햄버거)*/
+    .a {
+        display: block;
+        cursor: pointer;
+    }
+
+    .b {
+        display: none;
+        cursor: pointer;
+    }
+
+    .c {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    /*scroll bar*/
+
+    #scroll_bar {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background: #967844;
+        border-radius:50%;
+        opacity: 0.5;
+        transition: all 0.3s ease-in-out;
+        z-index: 10;
+    }
+
+    #scroll_bar i {
+        width: 100%;
+        height: 100%;
+        font-size:13px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #scroll_bar:hover {
+        opacity: 1;
+    }
+
+    /*header*/
+
+    header {
+        width: 100%;
+        height: 70px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s all ease-in-out;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 100;
+        background: #f8f5f0;
+    }
+
+    header #navbox {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    header #navbox #logo img {
+        width: 80px;
+    }
+
+    header #hide_nav {
+        width: 100%;
+        height: auto;
+        float: left;
+        font-family: Play, sans-serif;
+        z-index: 3;
+        position: absolute;
+        top: 70px;
+        z-index:400;
+    }
+
+    header #hide_nav ul {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #hide_nav ul li {
+        float: left;
+    }
+
+    header #hide_nav ul li a {
+        text-decoration: none;
+        color: black;
+        background-color: #f8f5f0;
+        opacity:1;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        padding: 15px;
+    }
+
+    header #hide_nav ul li a:hover {
+        color: #967844;
+        transition: all, 0.3s;
+    }
+
+
+    header .a {
+        width: 30px;
+        height: 20px;
+    }
+
+    .a span {
+        background: black;
+        height: 1px;
+        display: block;
+        margin-bottom: 7px;
+
+    }
+
+    .large{
+        opacity:0;
+    }
+    
+
+    footer {
+        width: 100%;
+        height: 287px;
+        background-color: #112337;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer #wrap {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #wrap .logo {
+        width: 220px;
+        height: 32px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #wrap .logo h1 {
+        font-size: 20px;
+        font-family: Italianno;
+        color: #fff;
+        font-weight: 200;
+    }
+
+    #wrap .subscribe {
+        width: 443px;
+        height: 145px;
+        margin-left: 70px;
+
+    }
+
+    #wrap .subscribe span {
+        font-size: 22px;
+        color: #fff;
+        font-family: Playfair Display;
+    }
+
+    #wrap input {
+        width: 332px;
+        height: 35px;
+        margin-top: 30px;
+        font-family: Playfair Display;
+    }
+
+    #wrap .about {
+        width: 151px;
+        height: 145px;
+        top: 15px;
+
+    }
+
+    #wrap .about h6 {
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #wrap .about ul {
+        font-family: Nanum Gothic;
+        color: #f8f5f0;
+    }
+
+    #wrap .about ul > li {
+        font-size: 13px;
+        font-family: Playfair Display;
+        margin-top: 10px;
+    }
+
+    #wrap .about > ul > li > a {
+        color: #f8f5f0;
+        text-decoration: none;
+    }
+
+    #wrap .about > ul > li:hover a {
+        color: #967844;
+    }
+}

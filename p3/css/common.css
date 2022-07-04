@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+* {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /*header nav_(599햄버거)*/
+    .a {
+        display: block;
+        cursor: pointer;
+    }
+
+    .b {
+        display: none;
+        cursor: pointer;
+    }
+
+    .c {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        top: 85px;
+        left: -45px;
+    }
+
+    /*all menu*/
+    .button_container {position: absolute; top: 8.5%; right: 2%; height: 27px; width: 35px; cursor: pointer; z-index: 100;transition: opacity .25s ease;}
+    .button_container:hover {opacity: .7;}
+    .button_container.active .top {transform: translateY(11px) translateX(0) rotate(45deg);background: #FFF;}
+    .button_container.active .middle {opacity: 0;background: #FFF;}
+    .button_container.active .bottom {transform: translateY(-11px) translateX(0) rotate(-45deg);background: #FFF;}
+    .button_container span {background: #fff; border: none; height: 2px; width: 100%; position: absolute; top: 0; left: 0;
+    transition: all .35s ease; cursor: pointer; z-index: 999;}
+    .button_container span:nth-of-type(2) {top: 11px;}
+    .button_container span:nth-of-type(3) {top: 22px;}
+    .overlay { position: fixed;background:#000;top: 0;left: 0;width: 100%;height: 0%;opacity: 0;visibility: hidden;transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;z-index: 99;}
+    .overlay.open { opacity: 1;visibility: visible;height: 100%;}
+    .overlay.open li {animation: fadeInRight .5s ease forwards;animation-delay: .35s;}
+    .overlay.open li:nth-of-type(2) {animation-delay: .4s;}
+    .overlay.open li:nth-of-type(3) {animation-delay: .45s;}
+    .overlay.open li:nth-of-type(4) {animation-delay: .50s;}
+    .overlay nav {position: relative; height: 40%; top: 50%; transform: translateY(-50%); font-size: 50px; font-weight: 400;text-align: center;}
+    .overlay ul {list-style: none;padding: 0;margin: 0 auto;display: inline-block;position: relative;height: 100%;}
+    .overlay ul li {display: block;height: 25%;height: calc(100% / 4);min-height: 50px;position: relative; opacity: 0; }
+    .overlay ul li a { display: block; position: relative; color: #FFF; text-decoration: none;overflow: hidden;}
+    .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {width: 100%;}
+    .overlay ul li a:after {content: '';position: absolute;bottom: 0;left: 50%;width: 0%;transform: translateX(-50%);height: 3px;
+    background: #FFF; transition: .35s;}
+      @keyframes fadeInRight {
+        0% {
+          opacity: 0;
+          left: 20%;
+        }
+        100% {
+          opacity: 1;
+          left: 0;
+        }
+      }
+
+    @media (max-width:599px)   {
+        .button_container{position: fixed; top: 3.5%; right: 5%;}
+
+    }  
+
+    /*top banner*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+   .scroll.text1{ font-family: 'Poppins', sans-serif; color:#fff; display:flex; position: absolute; top:0; left:0; z-index: 99; width:100%; border-bottom:1px solid #fff; overflow: hidden; }
+   .scroll.text1 div{font-size:2em; white-space: nowrap; text-transform: uppercase;  animation: animate 20s linear infinite; padding:5px;}
+   @keyframes animate
+   {
+        0%
+        {
+            transform: translateX(100%);
+        }
+        100%
+        {
+            transform: translateX(-100%);
+
+        }
+
+   }
+
+
+    @media (max-width:599px)   {
+        .scroll.text1{display:none;}
+        .text_x{display:none !important;}
+
+    }
+
+    @media (min-width:600px)   {
+     
+    }
+    @media (min-width:1100px)   {
+       
+    }
+
+    /*header*/
+    header {
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s all ease-in-out;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        background: black;
+        z-index: 9;
+    }
+
+    header #navbox {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    header #navbox #logo img {Í
+        height: 70px;
+    }
+
+    header #hide_nav {
+        width: 110%;
+        height: auto;
+        float: left;
+        font-family: Play, sans-serif;
+        z-index: 3;
+    }
+
+    header #hide_nav ul {
+        font-size: 16px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        opacity: 0.9;
+        margin-top: 15px;
+    }
+
+    header #hide_nav ul li {
+        float: left;
+    }
+
+    header #hide_nav ul li a {
+        text-decoration: none;
+        color: white;
+        background-color:black;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+        padding: 25px;
+    }
+
+    header #hide_nav ul li a:hover {
+        color: #1ED760;
+        transition: all, 0.3s;
+    }
+    
+    /*header fixed*/
+
+    header.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 3;
+        margin-top:0 !important;
+    }
+
+    header.fixed #navbox ul li a {
+        color: #fff;
+    }
+
+    header.fixed #navbox .c {
+        display: none;
+    }
+
+/*slick slider*/
+h3{margin:5px 0;}
+.slider.single-item img{width:100%; height:100vh; }
+.sliderContainer {position: relative; top:-80px; height:100vh;}
+.slick-slide {color: white; padding: 80px 0 120px; font-size: 30px; font-family: "Arial", "Helvetica";
+text-align: center;}
+.slick-prev:before,
+.slick-next:before {color: rgb(122, 117, 117);}  
+.slick-dots {bottom: -30px;}
+.progressBarContainer {position: absolute;bottom: 20px; width:300px; left:120px;}
+.progressBarContainer div {display: block; width: 30%; padding: 0; cursor: pointer; margin-right: 5%; float: left; color: white;}
+.progressBarContainer div:last-child {margin-right: 0;}
+.progressBarContainer div span.progressBar {width: 100%;height: 4px;background-color: rgba(255, 255, 255, 0.4);display: block;}
+.progressBarContainer div span.progressBar .inProgress {background-color: rgba(255, 255, 255, 1);width: 0%;height: 4px;}
+.text_x {display:flex; flex-direction:column; justify-content: space-between; color:#fff; width:40%; position: relative; top:-550px; left:120px; text-align: left;}
+.text_x h2  {color: #ffff;font-size: 75px;font-weight: 800; margin-bottom:20px;}
+.text_x span {font-size: 18px; color: #fff; font-weight: 500; margin-bottom:20px;}
+.text_x a{width: 203px; height: 46px;  font-size: 16px; color: #ffffff; font-weight:500;border: none; text-align: center; line-height:46px; border:1px solid #fff; margin-top:30px; /*background:#1ED760;*/}
+.text_x a:hover{background:#1ED760; transition: .1s;}
+.text_x p{font-size:20px;}
+
+.text_x h2{ display: inline-block;
+    position: relative;}
+.text_x h2::after{content: '';
+        position: absolute;
+        width: 65%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        transform-origin: bottom right;
+    transition: transform 0.25s ease-out;}
+
+.text_x h2:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+
+
+
+
+
+
+
+
+.main-visual-slider .slick-active .main-visual-item>img{animation: scaleIn 10s linear both}
+.main-visual-slider .slick-active h3{animation: slideIn 1.2s 1s ease both}
+.main-visual-slider .slick-active .t1{animation: slideIn 1.2s 1.2s ease both}
+.main-visual-slider .slick-active .t2{animation: slideIn 1.2s 1.4s  ease both}
+.main-visual-slider .slick-active .t3{animation: slideIn 1.2s 1.6s  ease both}
